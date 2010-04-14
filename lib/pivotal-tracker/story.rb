@@ -27,6 +27,8 @@ module PivotalTracker
     element :description, String
     element :jira_id, Integer
     element :jira_url, String
+    element :zendesk_id, Integer
+    element :zendesk_url, String
 
     def initialize(attributes={})
       self.project_id = attributes.delete(:owner).id if attributes[:owner]
